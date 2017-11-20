@@ -4,9 +4,10 @@
 
 /* appearance */
 static const char *fonts[] = {
-	"Iosevka Term-11:regular"
+	"Iosevka Term-11:medium"
+	"Iosevka-11:medium"
 };
-static const char dmenufont[]       = "Iosevka Term-11:regular";
+static const char dmenufont[]       = "Iosevka Term-11:medium";
 static const char normbordercolor[] = "#444444";
 static const char normbgcolor[]     = "#222222";
 static const char normfgcolor[]     = "#bbbbbb";
@@ -26,8 +27,9 @@ static const int topbar             = 1;        /* 0 means bottom bar */
 static const char colors[NUMCOLORS][MAXCOLORS][8] = {
   // border   foreground background
   { "#444444", "#bbbbbb", "#222222" },  // normal
-  { "#888888", "#eeeeee", "#666666" },  // selected
-  { "#222222", "#ff0000", "#222222" },  // red     
+  { "#888888", "#bbbbbb", "#222222" },  // selected
+//  { "#888888", "#eeeeee", "#666666" },  // selected
+  { "#222222", "#ff0000", "#222222" },  // red
   { "#222222", "#00ff00", "#222222" },  // lime
   { "#222222", "#0000ff", "#222222" },  // blue
   { "#222222", "#ffff00", "#222222" },  // yellow
@@ -45,8 +47,16 @@ static const char colors[NUMCOLORS][MAXCOLORS][8] = {
 
 /* tagging */
 //static const char *tags[] = { "\u03b1", "\u03b2", "\u03b3", "\u03b4", "\u03b5", "\u03b6", "\u03b7", "\u03b8", "\u03b9" };
+//static const char *tags[] = { "1 \uf310", "2 \uf300", "3 \ue61f", "4 \ue62b", "5 \uf02d", "6 \ue275", "7 \uf008", "8 \uf0e0", "9 \uf269" };
+//static const char *tags[] = { "\uf310", "\uf300", "\ue61f", "\ue62b", "\uf02d", "\ue275", "\uf008", "\uf0e0", "\uf269" };
+//static const char *tags[] = { " 1 ", " 2 ", " 3 ", " 4 ", " 5 ", " 6 ", " 7 ", " 8 ",  "9 " };
+static const char *tags[] =  { "1 ", "2 ", "3 ", "4 ", "5 ", "6 ", "7 ", "8 ", "9 " };
 
-static const char *tags[] = { "1", "2", "3", "4", "5", "6", "7", "8", "9" };
+//static const char *ctags[] = { "1 \uf310", "2 \uf300", "3 \ue61f", "4 \ue62b", "5 \uf02d", "6 \ue275", "7 \uf008", "8 \uf0e0", "9 \uf269" };
+//static const char *ctags[] = { "[1]", "[2]", "[3]", "[4]", "[5]", "[6]", "[7]", "[8]", "[9]" };
+//static const char *ctags[] = { "1]", "2]", "3]", "4]", "5]", "6]", "7]", "8]", "9]" };
+//static const char *ctags[] = { "1\u03b1", "2\u03b2", "3\u03b3", "4\u03b4", "5\u03b5", "6\u03b6", "7\u03b7", "8\u03b8", "9\u03bb" };
+static const char *ctags[] = { "1\uff63", "2\uff63", "3\uff63", "4\uff63", "5\uff63", "6\uff63", "7\uff63", "8\uff63", "9\uff63" };
 
 static const Rule rules[] = {
 	/* xprop(1):
